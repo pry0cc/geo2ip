@@ -1,0 +1,165 @@
+2.88.0.0,2.91.255.255,262144,17/05/10,Saudi Telecom Company JSC
+5.41.0.0,5.41.255.255,65536,16/05/12,Saudi Telecom Company JSC
+5.42.224.0,5.42.255.255,8192,18/05/12,Integrated Telecom Co. Ltd
+5.82.0.0,5.82.255.255,65536,13/06/12,Bayanat Al-Oula For Network Services
+5.108.0.0,5.111.255.255,262144,28/06/12,Etihad Etisalat, a joint stock company
+5.132.192.0,5.132.255.255,16384,02/07/12,Integrated Telecom Co. Ltd
+5.156.0.0,5.156.255.255,65536,19/07/12,Saudi Telecom Company JSC
+5.163.0.0,5.163.255.255,65536,30/07/12,Saudi Telecom Company JSC
+5.244.0.0,5.247.255.255,262144,11/09/12,Etihad Etisalat, a joint stock company
+31.166.0.0,31.167.255.255,131072,01/03/11,Etihad Etisalat, a joint stock company
+37.16.32.0,37.16.63.255,8192,16/12/11,Bayanat Al-Oula For Network Services
+37.16.128.0,37.16.255.255,32768,16/12/11,Bayanat Al-Oula For Network Services
+37.42.0.0,37.43.255.255,131072,04/01/12,Etihad Etisalat, a joint stock company
+37.56.0.0,37.56.255.255,65536,13/01/12,Saudi Telecom Company JSC
+37.76.224.0,37.76.255.255,8192,01/02/12,Integrated Telecom Co. Ltd
+37.99.128.0,37.99.191.255,16384,07/02/12,Etihad Atheeb Telecom Company
+37.104.0.0,37.107.255.255,262144,02/02/12,Saudi Telecom Company JSC
+37.121.0.0,37.121.255.255,65536,14/02/12,Etihad Etisalat, a joint stock company
+37.124.0.0,37.127.255.255,262144,14/02/12,Etihad Etisalat, a joint stock company
+37.141.0.0,37.141.255.255,65536,29/02/12,Bayanat Al-Oula For Network Services
+37.216.0.0,37.217.255.255,131072,30/03/12,Etihad Etisalat, a joint stock company
+37.224.0.0,37.224.255.255,65536,05/04/12,Saudi Telecom Company JSC
+37.240.0.0,37.243.255.255,262144,16/04/12,Etihad Etisalat, a joint stock company
+46.38.64.0,46.38.95.255,8192,24/11/10,Integrated Telecom Co. Ltd
+46.44.64.0,46.44.127.255,16384,19/08/10,Bayanat Al-Oula For Network Services
+46.52.0.0,46.52.127.255,32768,13/08/10,Etihad Etisalat, a joint stock company
+46.149.0.0,46.149.15.255,4096,06/12/10,Saudi Telecom Company JSC
+46.152.0.0,46.153.255.255,131072,26/10/10,Etihad Etisalat, a joint stock company
+46.184.0.0,46.184.127.255,32768,04/11/10,Etihad Atheeb Telecom Company
+46.230.0.0,46.230.127.255,32768,04/02/11,Bayanat Al-Oula For Network Services
+46.240.0.0,46.240.127.255,32768,16/12/10,Bayanat Al-Oula For Network Services
+46.251.128.0,46.251.159.255,8192,04/02/11,Bayanat Al-Oula For Network Services
+51.211.0.0,51.211.255.255,65536,01/09/93,Saudi Telecom Company JSC
+51.218.0.0,51.218.255.255,65536,01/09/93,Saudi Telecom Company JSC
+51.223.0.0,51.223.255.255,65536,01/09/93,Saudi Telecom Company JSC
+51.235.0.0,51.235.255.255,65536,01/09/93,Saudi Telecom Company JSC
+51.252.0.0,51.253.255.255,131072,01/09/93,Saudi Telecom Company JSC
+62.3.0.0,62.3.31.255,8192,21/07/00,Alharbi International for Telecom
+62.3.32.0,62.3.63.255,8192,09/01/02,Alharbi International for Telecom
+62.120.0.0,62.120.255.255,65536,28/12/07,Etihad Etisalat, a joint stock company
+62.149.64.0,62.149.127.255,16384,20/09/01,Saudi Telecom Company JSC
+77.30.0.0,77.31.255.255,131072,31/01/08,Saudi Telecom Company JSC
+77.64.0.0,77.64.127.255,32768,16/01/06,Arab Company For Internet & Communications Services (AwalNet)LLC
+77.221.96.0,77.221.127.255,8192,28/03/07,Mohammed Ali Alesayi Group
+77.232.96.0,77.232.127.255,8192,13/12/06,International Computer Company, Ltd.
+77.240.80.0,77.240.95.255,4096,10/01/07,Dar Al-Mustawred Trading Group
+77.240.128.0,77.240.143.255,4096,17/01/07,Capital Market Authority
+78.93.0.0,78.93.255.255,65536,19/07/07,Arab Company For Internet & Communications Services (AwalNet)LLC
+78.95.0.0,78.95.255.255,65536,30/07/07,Saudi Telecom Company JSC
+78.110.0.0,78.110.15.255,4096,31/07/07,SEVEN EYES FOR MARKETING LTD
+78.138.192.0,78.138.255.255,16384,13/06/07,GulfNet KSA
+79.172.128.0,79.172.191.255,16384,17/10/07,Middle East Internet Company Limited
+80.74.80.0,80.74.95.255,4096,11/02/05,Arabcircle Internet Services for Saudi Arabia
+80.240.64.0,80.240.79.255,4096,10/10/01,ods.orbitnet
+81.16.208.0,81.16.223.255,4096,13/02/09,Sarmad Trading Co. LTD.
+81.21.48.0,81.21.63.255,4096,12/01/06,Integrated Networks Co.
+82.118.160.0,82.118.191.255,8192,25/02/04,Shabakah Net
+82.147.192.0,82.147.223.255,8192,08/07/03,GulfNet KSA
+82.167.0.0,82.167.255.255,65536,20/08/03,ods.orbitnet
+83.101.128.0,83.101.255.255,32768,24/02/04,Jeraisy For Internet Services Co. Ltd
+84.22.224.0,84.22.255.255,8192,11/10/04,Arab Company For Internet & Communications Services (AwalNet)LLC
+84.23.96.0,84.23.127.255,8192,18/10/04,Etihad Etisalat, a joint stock company
+84.235.0.0,84.235.127.255,32768,16/06/04,Saudi Telecom Company JSC
+85.129.128.0,85.129.255.255,32768,17/11/04,Middle East Internet Company Limited
+85.194.64.0,85.194.127.255,16384,28/12/04,GulfNet KSA
+85.208.0.0,85.209.255.255,131072,09/02/05,Arabic Computer System Co.
+85.237.128.0,85.237.159.255,8192,25/05/05,Atheeb trading Co. Ltd (Saudi Internet)
+86.51.0.0,86.51.255.255,65536,28/04/05,Bayanat Al-Oula For Network Services
+86.60.0.0,86.60.127.255,32768,10/05/05,Arab Company For Internet & Communications Services (AwalNet)LLC
+87.101.128.0,87.101.255.255,32768,03/10/05,Integrated Telecom Co. Ltd
+87.109.0.0,87.109.255.255,65536,05/09/05,Saudi Telecom Company JSC
+87.230.128.0,87.230.255.255,32768,05/09/06,SPSNET
+88.81.0.0,88.81.31.255,8192,02/12/05,Arabcircle Internet Services for Saudi Arabia
+88.84.96.0,88.84.127.255,8192,18/01/06,SPSNET
+88.85.224.0,88.85.255.255,8192,13/02/06,Nour Communication Co.Ltd - Nournet
+88.213.0.0,88.213.63.255,16384,28/12/05,Middle East Internet Company Limited
+88.213.64.0,88.213.127.255,16384,01/11/06,Middle East Internet Company Limited
+89.4.0.0,89.5.255.255,131072,23/05/06,Middle East Internet Company Limited
+89.108.0.0,89.108.63.255,16384,13/03/06,Sahara Network
+89.144.64.0,89.144.127.255,16384,27/01/06,Shabakah Net
+89.147.0.0,89.147.63.255,16384,08/02/06,Saudi Basic Industries Co
+89.189.224.0,89.189.255.255,8192,29/05/06,Sultan Bin Abdulaziz Foundation
+89.237.128.0,89.237.191.255,16384,11/07/06,GulfNet KSA
+90.148.0.0,90.148.255.255,65536,08/12/06,Saudi Telecom Company JSC
+91.147.128.0,91.147.159.255,8192,31/10/06,Digital Solutions Provider
+91.147.160.0,91.147.175.255,4096,31/10/06,Digital Solutions Provider
+91.147.176.0,91.147.191.255,4096,31/10/06,Integrated Telecom Co. Ltd
+91.151.160.0,91.151.175.255,4096,13/12/06,SAUDI INTERNATIONAL TELECOM & ELECTRONICS CO.
+92.48.0.0,92.48.63.255,16384,12/11/07,Etihad Etisalat, a joint stock company
+93.98.0.0,93.98.255.255,65536,18/02/08,Middle East Internet Company Limited
+93.112.0.0,93.112.255.255,65536,21/12/07,Saudi Telecom Company JSC
+93.168.0.0,93.169.255.255,131072,19/03/08,Saudi Telecom Company JSC
+93.178.0.0,93.178.63.255,16384,31/03/08,International Computer Company, Ltd.
+94.48.0.0,94.49.255.255,131072,22/05/08,Saudi Telecom Company JSC
+94.77.192.0,94.77.255.255,16384,19/08/08,Etihad Atheeb Telecom Company
+94.96.0.0,94.99.255.255,262144,25/06/08,Saudi Telecom Company JSC
+95.184.0.0,95.187.255.255,262144,22/12/08,Saudi Telecom Company JSC
+95.218.0.0,95.219.255.255,131072,03/03/09,Saudi Telecom Company JSC
+109.82.0.0,109.83.255.255,131072,06/08/09,Etihad Etisalat, a joint stock company
+109.166.0.0,109.166.31.255,8192,19/10/09,Saudi Telecom Company JSC
+109.166.96.0,109.166.111.255,4096,19/10/09,Saudi Telecom Company JSC
+109.171.128.0,109.171.255.255,32768,18/11/09,King Abdullah University of Science and Technology
+109.206.64.0,109.206.95.255,8192,12/01/10,Saudi Telecom Company JSC
+128.127.192.0,128.127.255.255,16384,10/10/11,Integrated Telecom Co. Ltd
+128.204.240.0,128.204.255.255,4096,13/10/11,Integrated Telecom Co. Ltd
+128.234.0.0,128.234.255.255,65536,12/10/11,Saudi Telecom Company JSC
+129.208.0.0,129.208.255.255,65536,18/02/88,Saudi Telecom Company JSC
+146.251.0.0,146.251.255.255,65536,14/07/11,Bayanat Al-Oula For Network Services
+149.3.160.0,149.3.175.255,4096,22/07/11,Rayadah Investment Joint Stock Company
+151.254.0.0,151.255.255.255,131072,22/08/12,Saudi Telecom Company JSC
+159.0.0.0,159.0.255.255,65536,19/08/11,Saudi Telecom Company JSC
+166.87.0.0,166.87.255.255,65536,01/09/93,
+167.111.0.0,167.111.255.255,65536,01/09/93,
+176.16.0.0,176.19.255.255,262144,18/05/11,Etihad Etisalat, a joint stock company
+176.44.0.0,176.45.255.255,131072,23/05/11,Saudi Telecom Company JSC
+176.47.0.0,176.47.255.255,65536,24/05/11,Saudi Telecom Company JSC
+176.99.16.0,176.99.31.255,4096,26/06/12,Saudi Telecom Company JSC
+176.224.0.0,176.225.255.255,131072,29/11/11,Etihad Etisalat, a joint stock company
+178.73.64.0,178.73.127.255,16384,19/03/10,Bayanat Al-Oula For Network Services
+178.80.0.0,178.81.255.255,131072,29/09/11,Etihad Etisalat, a joint stock company
+178.86.0.0,178.86.255.255,65536,14/01/10,Saudi Telecom Company JSC
+178.87.0.0,178.87.255.255,65536,14/01/10,Saudi Telecom Company JSC
+188.48.0.0,188.55.255.255,524288,18/02/09,Saudi Telecom Company JSC
+188.117.64.0,188.117.127.255,16384,15/06/09,Sahara Network
+188.132.0.0,188.132.127.255,32768,17/04/09,Etihad Etisalat, a joint stock company
+188.139.0.0,188.139.127.255,32768,20/05/09,Arabcircle Internet Services for Saudi Arabia
+188.248.0.0,188.249.255.255,131072,24/06/09,Etihad Atheeb Telecom Company
+196.15.32.0,196.15.63.255,8192,25/04/95,
+212.11.160.0,212.11.191.255,8192,09/04/99,SPSNET
+212.12.160.0,212.12.191.255,8192,22/03/99,Nour Communication Co.Ltd - Nournet
+212.24.224.0,212.24.255.255,8192,22/09/99,GulfNet KSA
+212.26.0.0,212.26.31.255,8192,03/03/98,King Abdul Aziz City for Science and Technology
+212.26.32.0,212.26.63.255,8192,15/06/98,King Abdul Aziz City for Science and Technology
+212.26.64.0,212.26.127.255,16384,15/06/98,King Abdul Aziz City for Science and Technology
+212.33.160.0,212.33.191.255,8192,13/04/99,Atheeb trading Co. Ltd (Saudi Internet)
+212.46.32.0,212.46.63.255,8192,01/03/99,Saudi Business Machines
+212.57.192.0,212.57.223.255,8192,12/01/10,King Saud University
+212.62.96.0,212.62.127.255,8192,31/08/99,International Computer Company, Ltd.
+212.70.32.0,212.70.63.255,8192,04/06/99,Jeraisy For Internet Services Co. Ltd
+212.71.32.0,212.71.63.255,8192,16/06/99,Middle East Internet Company Limited
+212.76.64.0,212.76.95.255,8192,13/01/99,Sahara Network
+212.93.160.0,212.93.191.255,8192,30/07/99,SAUDI INTERNATIONAL TELECOM & ELECTRONICS CO.
+212.93.192.0,212.93.223.255,8192,18/05/99,Arab Company For Internet & Communications Services (AwalNet)LLC
+212.100.192.0,212.100.223.255,8192,28/04/99,Arab Company For Internet & Communications Services (AwalNet)LLC
+212.102.0.0,212.102.31.255,8192,27/05/99,Shabakah Net
+212.107.96.0,212.107.127.255,8192,29/11/99,Middle East Internet Company Limited
+212.116.192.0,212.116.223.255,8192,28/04/99,Arab Company For Internet & Communications Services (AwalNet)LLC
+212.118.96.0,212.118.127.255,8192,17/11/99,Middle East Internet Company Limited
+212.118.128.0,212.118.159.255,8192,09/12/98,Saudi Telecom Company JSC
+212.119.64.0,212.119.95.255,8192,15/02/99,Middle East Internet Company Limited
+212.138.0.0,212.138.255.255,65536,28/01/99,King Abdul Aziz City for Science and Technology
+212.162.128.0,212.162.159.255,8192,26/07/99,Arabic Computer System Co.
+212.215.128.0,212.215.255.255,32768,11/12/07,Saudi Telecom Company JSC
+213.136.192.0,213.136.223.255,8192,11/04/00,SUHUF Internet Services
+213.166.128.0,213.166.159.255,8192,01/02/00,Diginet
+213.181.160.0,213.181.191.255,8192,20/08/01,Middle East Internet Company Limited
+213.184.160.0,213.184.191.255,8192,03/09/01,Arab Company For Internet & Communications Services (AwalNet)LLC
+213.210.192.0,213.210.255.255,16384,22/11/02,Middle East Internet Company Limited
+213.230.0.0,213.230.31.255,8192,01/11/99,Sultan Bin Abdulaziz Foundation
+213.236.32.0,213.236.63.255,8192,15/04/08,Sahara Network
+217.8.64.0,217.8.79.255,4096,07/08/00,Arabcircle Internet Services for Saudi Arabia
+217.12.224.0,217.12.239.255,4096,03/03/09,Saudi Arabian Airlines
+217.145.240.0,217.145.255.255,4096,15/04/04,Applied Technologies Co.
+217.173.80.0,217.173.95.255,4096,15/03/04,BANK AL JAZIRA
+
