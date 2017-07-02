@@ -33,10 +33,10 @@ def IPFromCoord(lat, lon):
     cc = getCountryByCoord(lat,lon)
     results = IPFromCC(cc)
     for ip_range in results:
-        if (isinstance(ip_range, list)) and ip_range != "":
-            for ip in ips(ip_range[0], ip_range[1]):
-                res = gi.record_by_addr(ip)
-                print ip + ": " + str(res['latitude']) + "," + str(res['longitude'])
+        if (isinstance(ip_range, list)) and ip_range != None:
+            ip = ip_range[0]
+            res = gi.record_by_addr(ip)
+            print ip + ": " + str(res['latitude']) + "," + str(res['longitude'])
 
 #gi = GeoIP.open("GeoLiteCity.dat", GeoIP.GEOIP_STANDARD)
 #res = gi.record_by_addr("185.65.53.155")
