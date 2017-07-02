@@ -3,8 +3,8 @@
 import GeoIP
 import reverse_geocoder as rg
 import csv
-import json
 import argparse as ag
+import math
 
 parser = ag.ArgumentParser(description="Find IP from GEO Location")
 parser.add_argument('lat', type=float, help='latitude of target')
@@ -28,22 +28,23 @@ def IPFromCC(cc):
         data.append(row[0:2])
     return data
 
-def IPFromCoord(lat, lon):
+def IPFromCoord(lat, lon, radius):
     gi = GeoIP.open("GeoLiteCity.dat", GeoIP.GEOIP_STANDARD)
     cc = getCountryByCoord(lat,lon)
     results = IPFromCC(cc)
     for ip_range in results:
-        try:
-            if (isinstance(ip_range, list)):
-                for ip in ips(ip_range[0], ip_range[1]):
-                    res = gi.record_by_addr(ip)
-                    print ip + ": " + str(res['latitude']) + "," + str(res['longitude'])
-        except:
-            pass
+        print "Starting new range"
+        for ip in ips(ip_range[0], ip_range[1]):
+            res = gi.record_by_addr(ip)
+            ip_lat = str(float(math.floor(res["latitude"] * 1000) / 1000))
+            ip_lon = str(float(math.floor(res["longitude"] * 1000) / 1000))
+            
+            if (str(lat) in ip_lat) and (str(lon) in ip_lon):
+                print ip + ": " + ip_lat + ", " + ip_lon
 
 #gi = GeoIP.open("GeoLiteCity.dat", GeoIP.GEOIP_STANDARD)
 #res = gi.record_by_addr("185.65.53.155")
 #print str(res['latitude']) + "," + str(res['longitude'])
 
-print IPFromCoord(args.lat, args.lon)
+print IPFromCoord(args.lat, args.lon, 3)
 
