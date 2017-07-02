@@ -12,6 +12,12 @@ parser.add_argument('lon', type=float, help='longitude of target')
 
 args = parser.parse_args()
 
+def ips(start, end):
+    import socket, struct
+    start = struct.unpack('>I', socket.inet_aton(start))[0]
+    end = struct.unpack('>I', socket.inet_aton(end))[0]
+    return [socket.inet_ntoa(struct.pack('>I', i)) for i in range(start, end)]
+
 def getCountryByCoord(lat, lon):
     results = rg.search((lat,lon))
     return results[0]["cc"].lower()
@@ -23,8 +29,12 @@ def IPFromCC(cc):
     return data
 
 def IPFromCoord(lat, lon):
+    output = ""
     cc = getCountryByCoord(lat,lon)
-    return IPFromCC(cc)
+    results = IPFromCC(cc)
+    for ip_range in results:
+        if (isinstance(ip_range, list)) and ip_range != "":
+            print ip_range[0]
 
 #gi = GeoIP.open("GeoLiteCity.dat", GeoIP.GEOIP_STANDARD)
 #res = gi.record_by_addr("185.65.53.155")
