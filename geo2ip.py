@@ -12,16 +12,20 @@ parser.add_argument('lon', type=float, help='longitude of target')
 
 args = parser.parse_args()
 
-def getCountryByCoord(lat, lng):
-    results = rg.search((lat,lng))
+def getCountryByCoord(lat, lon):
+    results = rg.search((lat,lon))
     return results[0]["cc"].lower()
 
 def IPFromCC(cc):
-    print csv.reader(open('netblocks/'+cc+".csv")).next()
+    return csv.reader(open('netblocks/'+cc+".csv")).next()
+
+def IPFromCoord(lat, lon):
+    cc = getCountryByCoord(lat,lon)
+    return IPFromCC(cc)
 
 #gi = GeoIP.open("GeoLiteCity.dat", GeoIP.GEOIP_STANDARD)
 #res = gi.record_by_addr("185.65.53.155")
 #print str(res['latitude']) + "," + str(res['longitude'])
 
-IPFromCC(getCountryByCoord("40.151371","-3.409015"))
+print IPFromCoord(args.lat, args.lon)
 
