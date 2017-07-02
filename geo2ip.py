@@ -4,6 +4,13 @@ import GeoIP
 import reverse_geocoder as rg
 import csv
 import json
+import argparse as ag
+
+parser = ag.ArgumentParser(description="Find IP from GEO Location")
+parser.add_argument('lat', type=float, help='latitude of target')
+parser.add_argument('lon', type=float, help='longitude of target')
+
+args = parser.parse_args()
 
 def getCountryByCoord(lat, lng):
     results = str(rg.search((lat,lng)))
