@@ -34,7 +34,7 @@ def IPFromCoord(lat, lon):
     results = IPFromCC(cc)
     for ip_range in results:
         if (isinstance(ip_range, list)) and ip_range != "":
-            print ip_range[0]
+            print ips(ip_range[0], ip_range[1])
 
 #gi = GeoIP.open("GeoLiteCity.dat", GeoIP.GEOIP_STANDARD)
 #res = gi.record_by_addr("185.65.53.155")
