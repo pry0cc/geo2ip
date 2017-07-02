@@ -35,9 +35,9 @@ def IPFromCoord(lat, lon):
     for ip_range in results:
         try:
             if (isinstance(ip_range, list)):
-                ip = ip_range[0]
-                res = gi.record_by_addr(ip)
-                print ip + ": " + str(res['latitude']) + "," + str(res['longitude'])
+                for ip in ips(ip_range[0], ip_range[1]):
+                    res = gi.record_by_addr(ip)
+                    print ip + ": " + str(res['latitude']) + "," + str(res['longitude'])
         except:
             pass
 
