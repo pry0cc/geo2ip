@@ -17,7 +17,10 @@ def getCountryByCoord(lat, lon):
     return results[0]["cc"].lower()
 
 def IPFromCC(cc):
-    return csv.reader(open('netblocks/'+cc+".csv")).next()
+    data = []
+    for row in csv.reader(open('netblocks/'+cc+".csv")):
+        data.append(row[0:2])
+    return data
 
 def IPFromCoord(lat, lon):
     cc = getCountryByCoord(lat,lon)
