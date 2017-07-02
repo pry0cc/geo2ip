@@ -4,5 +4,7 @@ import GeoIP
 
 gi = GeoIP.open("GeoLiteCity.dat", GeoIP.GEOIP_STANDARD)
 
-print gi.record_by_addr("10.10.10.10")
+res = gi.record_by_addr("185.65.53.155")
+print res['longitude']
+print res['latitude']
 
