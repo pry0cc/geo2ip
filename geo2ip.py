@@ -48,7 +48,6 @@ def shortenIP(ip):
 def IPFromCoord(lat, lon):
     gi = GeoIP.open("GeoLiteCity.dat", GeoIP.GEOIP_STANDARD)
     cc = getCountryByCoord(lat,lon)
-
     results = IPFromCC(cc)
 
     try:
@@ -61,14 +60,15 @@ def IPFromCoord(lat, lon):
                 res = gi.record_by_addr(ip)
                 ip_lat = str(float(math.floor(res["latitude"] * 1000) / 1000))
                 ip_lon = str(float(math.floor(res["longitude"] * 1000) / 1000))
+                
+                if (str(lon) == "0.0") and (str(lat) == "0.0"):
+                    # No Search filter, print everything
+                    print shortenIP(ip)[:-1] + "0/24: " + ip_lat + ", " + ip_lon + " " + str(res["city"])
+                else:
+                    if (simpleForm(lat) in ip_lat) and (simpleForm(lon) in ip_lon):
+                        print shortenIP(ip)[:-1] + "0/24: " + ip_lat + ", " + ip_lon + " " + str(res["city"])
 
-                if (simpleForm(lat) in ip_lat) and (simpleForm(lon) in ip_lon):
-                    print shortenIP(ip) + ": " + ip_lat + ", " + ip_lon + " " + str(res["city"])
-
-    except:
-        pass
-#gi = GeoIP.open("GeoLiteCity.dat", GeoIP.GEOIP_STANDARD)
-#res = gi.record_by_addr("185.65.53.155")
-#print str(res['latitude']) + "," + str(res['longitude'])
+    except Exception as e:
+        print "ERROR: " + str(e)
 
 print IPFromCoord(args.lat, args.lon)
