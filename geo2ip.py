@@ -1,5 +1,6 @@
 #!/usr/bin/python2
 
+import sys
 import GeoIP
 import reverse_geocoder as rg
 import csv
@@ -8,10 +9,19 @@ import math
 import socket, struct
 
 parser = ag.ArgumentParser(description="Find IP from GEO Location")
-parser.add_argument('lat', type=float, help='latitude of target')
-parser.add_argument('lon', type=float, help='longitude of target')
+parser.add_argument('--lat', type=float, help='latitude of target')
+parser.add_argument('--lon', type=float, help='longitude of target')
+parser.add_argument("--area", type=str, help="The area to parse for")
+parser.add_argument("cc", type=str, help="The country code where the target is: e.g fr, gb, us, ar")
 
 args = parser.parse_args()
+
+if (args.lat == None or args.lon == None) and args.area == None:
+    print("ERR: Must pick either name or lat/long")
+    sys.exit()
+elif (args.lat != None or args.lon != None) and args.area != None:
+    print "ERR: Must Pick either name or lat/long, not both"
+    sys.exit()
 
 def ips(start, end):
     start = struct.unpack('>I', socket.inet_aton(start))[0]
@@ -47,7 +57,7 @@ def shortenIP(ip):
 
 def IPFromCoord(lat, lon):
     gi = GeoIP.open("GeoLiteCity.dat", GeoIP.GEOIP_STANDARD)
-    cc = getCountryByCoord(lat,lon)
+    cc = args.cc
     results = IPFromCC(cc)
 
     try:
@@ -61,9 +71,9 @@ def IPFromCoord(lat, lon):
                 ip_lat = str(float(math.floor(res["latitude"] * 1000) / 1000))
                 ip_lon = str(float(math.floor(res["longitude"] * 1000) / 1000))
                 
-                if (str(lon) == "0.0") and (str(lat) == "0.0"):
-                    # No Search filter, print everything
-                    print shortenIP(ip)[:-1] + "0/24: " + ip_lat + ", " + ip_lon + " " + str(res["city"])
+                if args.area != None:
+                    if args.area in str(res["city"]):
+                        print shortenIP(ip)[:-1] + "0/24: " + ip_lat + ", " + ip_lon + " " + str(res["city"])
                 else:
                     if (simpleForm(lat) in ip_lat) and (simpleForm(lon) in ip_lon):
                         print shortenIP(ip)[:-1] + "0/24: " + ip_lat + ", " + ip_lon + " " + str(res["city"])
