@@ -19,6 +19,8 @@ parser.add_argument("--verbose", action="store_true",help="Add verbosity")
 
 args = parser.parse_args()
 
+debug = True
+
 if (args.lat == None or args.lon == None) and args.area == None:
     print("ERR: Must pick either name or lat/long")
     sys.exit()
@@ -47,6 +49,8 @@ def simpleForm(val):
         return str(val)
 
 def shortenIP(ip):
+    if debug:
+        print( "[DEBUG] shortening IP" )
     result = ""
     octets = ip.split(".")[0:3]
     for octet in octets:
@@ -54,6 +58,9 @@ def shortenIP(ip):
             result += octet + "."
         else:
             result += octet + ".1"
+    
+    if debug:
+        print( "[DEBUG] result of shorting IP: " + result )
     return result
 
 def returnMasscan(ip_range, filename):
