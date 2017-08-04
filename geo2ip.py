@@ -4,7 +4,6 @@ from __future__ import print_function
 
 import sys
 import GeoIP
-import reverse_geocoder as rg
 import csv
 import argparse as ag
 import math
@@ -31,9 +30,6 @@ def ips(start, end):
     end = struct.unpack('>I', socket.inet_aton(end))[0]
     return [socket.inet_ntoa(struct.pack('>I', i)) for i in range(start, end)]
 
-def getCountryByCoord(lat, lon):
-    results = rg.search((lat,lon))
-    return results[0]["cc"].lower()
 
 def IPFromCC(cc):
     data = []
