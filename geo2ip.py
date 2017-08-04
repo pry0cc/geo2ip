@@ -15,6 +15,7 @@ parser.add_argument('--lon', type=float, help='longitude of target')
 parser.add_argument("--area", type=str, help="The area to parse for")
 parser.add_argument("--output", type=str, help="File to save output in")
 parser.add_argument("cc", type=str, help="The country code where the target is: e.g fr, gb, us, ar")
+parser.add_argument("--verbose", action="store_true",help="Add verbosity")
 
 args = parser.parse_args()
 
