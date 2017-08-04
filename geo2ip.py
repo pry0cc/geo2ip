@@ -33,6 +33,7 @@ def ips(start, end):
 
 
 def IPFromCC(cc):
+    print("[+] Parsing csv-file: " + cc + ".csv")
     data = []
     for row in csv.reader(open('netblocks/'+cc+".csv")):
         data.append(row[0:2])
@@ -88,19 +89,39 @@ def main():
                     if args.area in str(res["city"]):
                         if args.output != None:
                             with open("output/"+args.output+"-"+str(counter)+".conf", "a") as config:
-                                config.write(returnMasscan(shortenIP(ip)[:-1]+"0/24", args.output+"-"+str(counter)+".xml"))
-                            print("[+] Saved config file to "+"output/"+args.output+"-"+str(counter)+".conf")
+                                config.write(
+                                    returnMasscan(shortenIP(ip)[:-1]+"0/24", 
+                                    args.output+"-"+str(counter)+".xml")
+                                )
+                            print( "[+] Saved config file to " 
+                                    + "output/"+args.output+"-" 
+                                    + str(counter)+".conf"
+                            )
                             counter += 1
                         else:
-                            print(shortenIP(ip)[:-1] + "0/24: " + ip_lat + ", " + ip_lon + " " + str(res["city"]))
+                            print(shortenIP(ip)[:-1] + "0/24: " 
+                                    + ip_lat + ", " 
+                                    + ip_lon + " " 
+                                    + str(res["city"])
+                            )
                 elif (simpleForm(args.lat) in ip_lat) and (simpleForm(args.lon) in ip_lon):
                     if args.output != None:
                         with open("output/"+args.output+"-"+str(counter)+".conf", "a") as config:
-                            config.write(returnMasscan(shortenIP(ip)[:-1]+"0/24", args.output+"-"+str(counter)+".xml"))
-                        print("[+] Saved config file to "+"output/"+args.output+"-"+str(counter)+".conf")
+                            config.write(
+                                    returnMasscan(shortenIP(ip)[:-1]+"0/24", 
+                                    args.output+"-"+str(counter)+".xml")
+                            )
+                        print( "[+] Saved config file to "
+                                + "output/"+args.output+"-" 
+                                + str(counter)+".conf"
+                        )
                         counter += 1
                     else:
-                        print(shortenIP(ip)[:-1] + "0/24: " + ip_lat + ", " + ip_lon + " " + str(res["city"]))
+                        print(shortenIP(ip)[:-1] + "0/24: " 
+                                + ip_lat + ", " 
+                                + ip_lon + " " 
+                                + str(res["city"])
+                        )
 
     except Exception as e:
         print("ERROR: " + str(e))
