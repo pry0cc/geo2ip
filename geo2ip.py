@@ -17,10 +17,13 @@ parser.add_argument("--verbose", action="store_true",help="Add verbosity")
 
 args = parser.parse_args()
 
-debug = True
+if args.verbose == True:
+    debug = True
+else:
+    debug = False
 
 if (args.lat == None or args.lon == None) and args.area == None:
-    print("ERR: Must pick either name or lat/long")
+    print("ERR: Must pick either area or lat/long")
     sys.exit()
 elif (args.lat != None or args.lon != None) and args.area != None:
     print("ERR: Must Pick either name or lat/long, not both")
