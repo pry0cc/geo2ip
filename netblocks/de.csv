@@ -116,7 +116,7 @@
 46.252.16.0,46.252.31.255,4096,16/12/10,domainfactory GmbH
 46.252.128.0,46.252.143.255,4096,13/02/12,Unitymedia NRW GmbH
 46.253.16.0,46.253.31.255,4096,30/12/10,Megaspace Internet Services GmbH
-46.253.48.0,46.253.63.255,4096,04/01/11,Andreas Muth trading as "Firma Andreas Muth e.K. Antennenbaubetrieb"
+46.253.48.0,46.253.63.255,4096,04/01/11,Andreas Muth trading as 'Firma Andreas Muth e.K. Antennenbaubetrieb'
 46.253.64.0,46.253.79.255,4096,04/01/11,ip-fabric GmbH
 46.253.112.0,46.253.127.255,4096,14/01/11,Aixit GmbH
 46.253.144.0,46.253.159.255,4096,14/01/11,Gamigo AG
@@ -1600,7 +1600,7 @@
 213.182.96.0,213.182.127.255,8192,18/11/02,EWE TEL GmbH
 213.182.128.0,213.182.159.255,8192,03/02/00,Versatel Deutschland GmbH
 213.183.0.0,213.183.31.255,8192,17/01/00,netplace Telematic GmbH
-213.183.64.0,213.183.95.255,8192,06/04/00,PfalzKom, Gesellschaft fuer Telekommunikation mbH
+213.183.64.0,213.183.95.255,8192,06/04/00,PfalzKom; Gesellschaft fuer Telekommunikation mbH
 213.183.160.0,213.183.191.255,8192,31/08/01,EWE TEL GmbH
 213.183.192.0,213.183.223.255,8192,11/05/00,Intares
 213.185.64.0,213.185.95.255,8192,24/03/00,PCE-NET GmbH
@@ -1615,7 +1615,7 @@
 213.198.64.0,213.198.127.255,16384,26/09/00,
 213.202.192.0,213.202.255.255,16384,21/10/02,United Gameserver GmbH
 213.203.192.0,213.203.255.255,16384,22/10/02,PlusServer AG
-213.206.160.0,213.206.191.255,8192,03/07/03,PfalzKom, Gesellschaft fuer Telekommunikation mbH
+213.206.160.0,213.206.191.255,8192,03/07/03,PfalzKom; Gesellschaft fuer Telekommunikation mbH
 213.208.32.0,213.208.63.255,8192,30/11/01,Onlime GmbH
 213.209.64.0,213.209.127.255,16384,12/10/00,wilhelm.tel GmbH
 213.209.128.0,213.209.159.255,8192,07/06/00,K&K Kommunikationssysteme GmbH
